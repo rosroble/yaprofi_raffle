@@ -17,18 +17,4 @@ public class RaffleResult {
         return prize;
     }
 
-    public static final String example =
-        "[\n" +
-                "  {\n" +
-                "    “winner”: {\n" +
-                "      “id”: number,\n" +
-                "      “name”: “string”\n" +
-                "    },\n" +
-                "    “prize”: {\n" +
-                "      “id”: number,\n" +
-                "      “description”: “string”\n" +
-                "    }\n" +
-                "  },\n" +
-                "  …\n" +
-                "]";
 }

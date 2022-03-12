@@ -26,7 +26,7 @@ public class ExtendedPromo extends Promo{
     }
 
     public void removeParticipant(long id) {
-        participants.put(id, null);
+        participants.remove(id);
     }
 
     public Prize getPrize(long id) {
@@ -34,7 +34,7 @@ public class ExtendedPromo extends Promo{
     }
 
     public void removePrize(long id) {
-        prizes.put(id, null);
+        prizes.remove(id);
     }
 
     public List<Participant> getParticipants() {

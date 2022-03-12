@@ -112,7 +112,7 @@ public class RaffleController {
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deletePromo(@PathVariable("id") long id) {
         if (!activePromos.containsKey(id)) return ResponseEntity.notFound().build();
-        activePromos.put(id, null);
+        activePromos.remove(id);
         return ResponseEntity.ok().build();
     }
 
